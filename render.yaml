@@ -1,13 +1,11 @@
+# Exported from Render on 2025-01-29T03:21:24Z
 services:
-  - type: web
-    name: fastapi-example
-    runtime: python
-    plan: free
-    region: oregon  # Optional: Choose a region (oregon, frankfurt, singapore, etc.)
-    branch: main  # Ensure it's deploying from the correct branch
-    autoDeploy: true  # Change to true if you want automatic deployment on push
-    envVars:
-      - key: PORT
-        value: 10000  # Render sets this automatically, but you can define it
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+- type: web
+  name: Likitha-
+  runtime: python
+  repo: https://github.com/HarshaSatyavardhan/Likitha-
+  plan: free
+  region: singapore
+  buildCommand: pip install -r requirements.txt
+  startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+version: "1"
